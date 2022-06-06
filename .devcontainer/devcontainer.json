@@ -1,0 +1,18 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "HashiCorp.terraform",
+        "SatoshiYamamoto.vscode-end-of-line",
+        "donjayamanne.githistory"
+      ]
+    },
+    "features": {
+      "docker-in-docker": "latest"
+    }
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "image": "marshyon/vscode-docker-dev:0.0.9"  
+}
