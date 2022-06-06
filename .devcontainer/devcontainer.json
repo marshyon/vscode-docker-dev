@@ -14,5 +14,5 @@
   "forwardPorts": [
     3000
   ],
-  "image": "marshyon/vscode-docker-dev:0.0.9"  
+  "image": "marshyon/vscode-docker-dev:0.0.10"  
 }
