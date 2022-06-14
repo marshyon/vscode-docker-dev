@@ -12,7 +12,7 @@ apt install git vim zsh neofetch rsync python-pip python-dev -y
 #
 # AWS CLI
 #
-url "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
 rm awscliv2.zip
