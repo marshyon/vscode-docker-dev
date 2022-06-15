@@ -20,7 +20,7 @@ rm awscliv2.zip
 #
 # VERSIONS OF TERRAFORM
 #
-for TVER in 1.2.2 1.0.0
+for TVER in 1.2.2 1.1.7 1.0.0
 do
     TF="terraform_${TVER}_linux_amd64.zip"
     URL="https://releases.hashicorp.com/terraform/${TVER}/${TF}"
@@ -31,7 +31,12 @@ do
     rm -v $TF
 done
 
-ln -s /usr/local/bin/terraform_1.2.2 /usr/local/bin/terraform
+ln -s /usr/local/bin/terraform_1.1.7 /usr/local/bin/terraform
+
+#
+# TFSWITCH
+#
+curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
 
 #
 # VERSIONS OF KUBECTL
