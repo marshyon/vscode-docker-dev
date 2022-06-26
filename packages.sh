@@ -51,6 +51,8 @@ done
 
 ln -s /usr/local/bin/kubectl_1.24.0 /usr/local/bin/kubectl
 
+echo 'source <(kubectl completion bash)' >>~/.bashrc
+
 # HELM
 
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
