@@ -7,7 +7,7 @@ export DEBIAN_FRONTEND=noninteractive
 #
 apt-get update 
 apt upgrade -y
-apt install git vim zsh neofetch rsync python-pip python-dev -y 
+apt install git vim zsh neofetch rsync python-pip python-dev vim -y 
 
 #
 # AWS CLI
@@ -50,7 +50,7 @@ do
 done
 
 ln -s /usr/local/bin/kubectl_1.24.0 /usr/local/bin/kubectl
-
+echo 'source /etc/bash_completion' >>~/.bashrc
 echo 'source <(kubectl completion bash)' >>~/.bashrc
 
 # HELM
